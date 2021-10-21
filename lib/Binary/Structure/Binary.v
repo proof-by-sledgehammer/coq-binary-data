@@ -34,7 +34,27 @@ Module Binary.
     ; disj_compl : forall x, disj x (inv x) = one
     }.
 
-  Module Notatios.
+  Global Hint Resolve inv_inv : core.
+  Global Hint Resolve conj_de_morgan : core.
+  Global Hint Resolve disj_de_morgan : core.
+  Global Hint Resolve conj_assoc : core.
+  Global Hint Resolve disj_assoc : core.
+  Global Hint Resolve conj_comm : core.
+  Global Hint Resolve disj_comm : core.
+  Global Hint Resolve conj_distr : core.
+  Global Hint Resolve disj_distr : core.
+  Global Hint Resolve conj_ident : core.
+  Global Hint Resolve disj_ident : core.
+  Global Hint Resolve conj_anhil : core.
+  Global Hint Resolve disj_anhil : core.
+  Global Hint Resolve conj_idemp : core.
+  Global Hint Resolve disj_idemp : core.
+  Global Hint Resolve conj_absorp : core.
+  Global Hint Resolve disj_absorp : core.
+  Global Hint Resolve conj_compl : core.
+  Global Hint Resolve disj_compl : core.
+
+  Module Notations.
 
     Notation "⊥" := zero.
     Notation "⊤" := one.
@@ -46,5 +66,5 @@ Module Binary.
     Notation "x ⊕ y" := ((x ∥ y) & ¬(x & y)) (at level 40).
     Notation "x ≡ y" := (¬ (x ⊕ y)) (at level 40).
 
-  End Notatios.
+  End Notations.
 End Binary.

@@ -2,3 +2,4 @@
 
 lib/Binary/Util/Notation.v
 lib/Binary/Structure/Binary.v
+lib/Binary/Data/Bit.v
