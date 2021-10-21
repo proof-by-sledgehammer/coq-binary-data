@@ -1,1 +1,4 @@
 -R lib/Binary Binary
+
+lib/Binary/Util/Notation.v
+lib/Binary/Structure/Binary.v
